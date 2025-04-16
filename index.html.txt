@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Dashboard de Tabletización MORENA</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+    header {
+      background-color: #7a1f1f;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    section {
+      padding: 40px;
+      max-width: 800px;
+      margin: auto;
+    }
+    h1, h2 {
+      color: #7a1f1f;
+    }
+    .card {
+      background-color: white;
+      padding: 20px;
+      margin-top: 20px;
+      box-shadow: 0 0 8px rgba(0,0,0,0.1);
+      border-radius: 8px;
+    }
+    a {
+      text-decoration: none;
+      color: #0066cc;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    footer {
+      text-align: center;
+      font-size: 14px;
+      padding: 20px;
+      color: #888;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Dashboard de Distribución de Tabletización</h1>
+    <p>Movimiento de Regeneración Nacional (MORENA)</p>
+  </header>
+
+  <section>
+    <div class="card">
+      <h2>Resumen General</h2>
+      <p><strong>TENANT MORENA:</strong> 10,842 tabletas activas</p>
+      <p><strong>TENANT REFERENTES:</strong> 8,495 tabletas activas</p>
+    </div>
+
+    <div class="card">
+      <h2>Mapas Interactivos</h2>
+      <ul>
+        <li><a href="Mapa_TENANT%20MORENA.html" target="_blank">Mapa – TENANT MORENA</a></li>
+        <li><a href="Mapa_TENANT_REFERENTES.html" target="_blank">Mapa – TENANT REFERENTES</a></li>
+        <li><a href="Mapa_Tabletas_Veracruz_Durango.html" target="_blank">Mapa – Tabletas Veracruz y Durango</a></li>
+        <li><a href="Mapa_Tabletas_EDOMEX.html" target="_blank">Mapa – Tabletas Estado de México</a></li>
+        <li><a href="Mapa_Tabletas_PROCESO.html" target="_blank">Mapa – Tabletas PROCESO</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <footer>
+    © 2024 Movimiento de Regeneración Nacional. Todos los derechos reservados.
+  </footer>
+</body>
+</html>
