@@ -6,67 +6,23 @@
   <title>Dashboard Nacional de Tabletización</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      margin: 0;
-      background-color: #f9f9f9;
-      padding: 20px;
-      color: #333;
-    }
-    header {
-      text-align: center;
-      padding: 30px 0;
-      background-color: #7a1f1f;
-      color: white;
-    }
-    section {
-      max-width: 900px;
-      margin: auto;
-    }
-    .card {
-      background-color: white;
-      border-radius: 8px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-      padding: 20px;
-      margin: 20px 0;
-    }
-    h1, h2 {
-      color: #7a1f1f;
-    }
-    ul {
-      list-style: none;
-      padding-left: 0;
-    }
-    li {
-      margin-bottom: 10px;
-    }
-    a {
-      text-decoration: none;
-      color: #0066cc;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-    img {
-      max-width: 100%;
-      height: auto;
-      margin-top: 30px;
-    }
-    footer {
-      margin-top: 40px;
-      text-align: center;
-      font-size: 14px;
-      color: #888;
-    }
+    body { font-family: 'Segoe UI', sans-serif; margin: 0; background-color: #f9f9f9; padding: 20px; color: #333; }
+    header { text-align: center; padding: 30px 0; background-color: #7a1f1f; color: white; }
+    section { max-width: 900px; margin: auto; }
+    .card { background-color: white; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.1); padding: 20px; margin: 20px 0; }
+    h1, h2 { color: #7a1f1f; }
+    ul { list-style: none; padding-left: 0; column-count: 2; }
+    li { margin-bottom: 8px; }
+    a { text-decoration: none; color: #0066cc; }
+    a:hover { text-decoration: underline; }
+    footer { margin-top: 40px; text-align: center; font-size: 14px; color: #888; }
   </style>
 </head>
 <body>
-
 <header>
   <h1>Dashboard Nacional de Tabletización</h1>
   <p>Movimiento de Regeneración Nacional (MORENA)</p>
 </header>
-
 <section>
   <div class="card">
     <h2>Resumen General</h2>
@@ -75,23 +31,48 @@
   </div>
 
   <div class="card">
-    <h2>Mapa Sensible de Estados</h2>
-    <p>Haz clic sobre un estado para consultar su reporte de tabletización:</p>
-    <img src="Mexico_map_blank_states.png" usemap="#mapa-mexico" alt="Mapa de la República Mexicana">
-    <map name="mapa-mexico">
-      <area shape="rect" coords="140,200,200,270" href="Mapa_Durango.html" alt="Durango">
-      <area shape="rect" coords="320,290,400,340" href="Mapa_Estado_de_México.html" alt="Estado de México">
-      <area shape="rect" coords="400,320,470,370" href="Mapa_Veracruz.html" alt="Veracruz">
-      <area shape="rect" coords="250,310,310,350" href="Mapa_Michoacán.html" alt="Michoacán">
-      <area shape="rect" coords="220,180,290,240" href="Mapa_Chihuahua.html" alt="Chihuahua">
-      <area shape="rect" coords="300,240,360,280" href="Mapa_Hidalgo.html" alt="Hidalgo">
-    </map>
+    <h2>Consulta de Mapas por Estado</h2>
+    <ul>
+      <li><a href="Mapa_Aguascalientes.html" target="_blank">Aguascalientes</a></li>
+      <li><a href="Mapa_Baja_California.html" target="_blank">Baja California</a></li>
+      <li><a href="Mapa_Baja_California_Sur.html" target="_blank">Baja California Sur</a></li>
+      <li><a href="Mapa_Campeche.html" target="_blank">Campeche</a></li>
+      <li><a href="Mapa_Chiapas.html" target="_blank">Chiapas</a></li>
+      <li><a href="Mapa_Chihuahua.html" target="_blank">Chihuahua</a></li>
+      <li><a href="Mapa_Ciudad_de_México.html" target="_blank">Ciudad de México</a></li>
+      <li><a href="Mapa_Coahuila.html" target="_blank">Coahuila</a></li>
+      <li><a href="Mapa_Colima.html" target="_blank">Colima</a></li>
+      <li><a href="Mapa_Durango.html" target="_blank">Durango</a></li>
+      <li><a href="Mapa_Estado_de_México.html" target="_blank">Estado de México</a></li>
+      <li><a href="Mapa_Guanajuato.html" target="_blank">Guanajuato</a></li>
+      <li><a href="Mapa_Guerrero.html" target="_blank">Guerrero</a></li>
+      <li><a href="Mapa_Hidalgo.html" target="_blank">Hidalgo</a></li>
+      <li><a href="Mapa_Jalisco.html" target="_blank">Jalisco</a></li>
+      <li><a href="Mapa_Michoacán.html" target="_blank">Michoacán</a></li>
+      <li><a href="Mapa_Morelos.html" target="_blank">Morelos</a></li>
+      <li><a href="Mapa_Nayarit.html" target="_blank">Nayarit</a></li>
+      <li><a href="Mapa_Nuevo_León.html" target="_blank">Nuevo León</a></li>
+      <li><a href="Mapa_Nuevo_México.html" target="_blank">Nuevo México</a></li>
+      <li><a href="Mapa_Oaxaca.html" target="_blank">Oaxaca</a></li>
+      <li><a href="Mapa_Puebla.html" target="_blank">Puebla</a></li>
+      <li><a href="Mapa_Querétaro.html" target="_blank">Querétaro</a></li>
+      <li><a href="Mapa_Quintana_Roo.html" target="_blank">Quintana Roo</a></li>
+      <li><a href="Mapa_San_Luis_Potosí.html" target="_blank">San Luis Potosí</a></li>
+      <li><a href="Mapa_Sinaloa.html" target="_blank">Sinaloa</a></li>
+      <li><a href="Mapa_Sonora.html" target="_blank">Sonora</a></li>
+      <li><a href="Mapa_Tabasco.html" target="_blank">Tabasco</a></li>
+      <li><a href="Mapa_Tamaulipas.html" target="_blank">Tamaulipas</a></li>
+      <li><a href="Mapa_Texas.html" target="_blank">Texas</a></li>
+      <li><a href="Mapa_Tlaxcala.html" target="_blank">Tlaxcala</a></li>
+      <li><a href="Mapa_Veracruz.html" target="_blank">Veracruz</a></li>
+      <li><a href="Mapa_Yucatán.html" target="_blank">Yucatán</a></li>
+      <li><a href="Mapa_Zacatecas.html" target="_blank">Zacatecas</a></li>
+
+    </ul>
   </div>
 </section>
-
 <footer>
   © 2024 Movimiento de Regeneración Nacional. Todos los derechos reservados.
 </footer>
-
 </body>
 </html>
