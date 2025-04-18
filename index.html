@@ -3,36 +3,42 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Dashboard de Tabletización MORENA</title>
+  <title>Dashboard Nacional de Tabletización</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
     body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-family: 'Segoe UI', sans-serif;
       margin: 0;
-      padding: 0;
       background-color: #f9f9f9;
+      padding: 20px;
       color: #333;
     }
     header {
+      text-align: center;
+      padding: 30px 0;
       background-color: #7a1f1f;
       color: white;
-      padding: 20px;
-      text-align: center;
     }
     section {
-      padding: 40px;
-      max-width: 800px;
+      max-width: 900px;
       margin: auto;
+    }
+    .card {
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      padding: 20px;
+      margin: 20px 0;
     }
     h1, h2 {
       color: #7a1f1f;
     }
-    .card {
-      background-color: white;
-      padding: 20px;
-      margin-top: 20px;
-      box-shadow: 0 0 8px rgba(0,0,0,0.1);
-      border-radius: 8px;
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+    li {
+      margin-bottom: 10px;
     }
     a {
       text-decoration: none;
@@ -41,41 +47,51 @@
     a:hover {
       text-decoration: underline;
     }
+    img {
+      max-width: 100%;
+      height: auto;
+      margin-top: 30px;
+    }
     footer {
+      margin-top: 40px;
       text-align: center;
       font-size: 14px;
-      padding: 20px;
       color: #888;
     }
   </style>
 </head>
 <body>
-  <header>
-    <h1>Dashboard de Distribución de Tabletización</h1>
-    <p>Movimiento de Regeneración Nacional (MORENA)</p>
-  </header>
 
-  <section>
-    <div class="card">
-      <h2>Resumen General</h2>
-      <p><strong>TENANT MORENA:</strong> 7,575 tabletas activas enroladas</p>
-      <p><strong>TENANT REFERENTES:</strong> 20,442 tabletas activas enroladas</p>
-    </div>
+<header>
+  <h1>Dashboard Nacional de Tabletización</h1>
+  <p>Movimiento de Regeneración Nacional (MORENA)</p>
+</header>
 
-    <div class="card">
-      <h2>Mapas Interactivos</h2>
-      <ul>
-        <li><a href="Mapa_TENANT%20MORENA.html" target="_blank">Mapa – TENANT MORENA</a></li>
-        <li><a href="Mapa_TENANT_REFERENTES.html" target="_blank">Mapa – TENANT REFERENTES</a></li>
-        <li><a href="Mapa_Tabletas_Veracruz_Durango.html" target="_blank">Mapa – Tabletas Veracruz y Durango</a></li>
-        <li><a href="Mapa_Tabletas_EDOMEX.html" target="_blank">Mapa – Tabletas Estado de México</a></li>
-        <li><a href="Mapa_Tabletas_PROCESO.html" target="_blank">Mapa – Tabletas PROCESO</a></li>
-      </ul>
-    </div>
-  </section>
+<section>
+  <div class="card">
+    <h2>Resumen General</h2>
+    <p><strong>TENANT MORENA:</strong> 7,575 tabletas activas enroladas</p>
+    <p><strong>TENANT REFERENTES:</strong> 20,442 tabletas activas enroladas</p>
+  </div>
 
-  <footer>
-    © 2024 Movimiento de Regeneración Nacional. Todos los derechos reservados.
-  </footer>
+  <div class="card">
+    <h2>Mapa Sensible de Estados</h2>
+    <p>Haz clic sobre un estado para consultar su reporte de tabletización:</p>
+    <img src="Mexico_map_blank_states.png" usemap="#mapa-mexico" alt="Mapa de la República Mexicana">
+    <map name="mapa-mexico">
+      <area shape="rect" coords="140,200,200,270" href="Mapa_Durango.html" alt="Durango">
+      <area shape="rect" coords="320,290,400,340" href="Mapa_Estado_de_México.html" alt="Estado de México">
+      <area shape="rect" coords="400,320,470,370" href="Mapa_Veracruz.html" alt="Veracruz">
+      <area shape="rect" coords="250,310,310,350" href="Mapa_Michoacán.html" alt="Michoacán">
+      <area shape="rect" coords="220,180,290,240" href="Mapa_Chihuahua.html" alt="Chihuahua">
+      <area shape="rect" coords="300,240,360,280" href="Mapa_Hidalgo.html" alt="Hidalgo">
+    </map>
+  </div>
+</section>
+
+<footer>
+  © 2024 Movimiento de Regeneración Nacional. Todos los derechos reservados.
+</footer>
+
 </body>
 </html>
